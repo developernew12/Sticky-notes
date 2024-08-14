@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    font-size: 1.3rem;
+    min-width: 50%;
+    /* border: 2px solid red; */
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.right-container .note {
+    display: inline-block;
+    flex-direction: column; 
+    padding: 10px; 
+    border-radius: 10px; 
+    margin: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: max-content;
+}
+.text_color textarea,.text_color .color input{
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #b2fefa;
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
+}
+.text_color textarea{
+    padding: 10px;
+}
+.text_color .color input{
+    margin-top: 10px;
+}
+.text_color textarea{
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5);
+}
+.button button{
+    width: 300px;
+    padding: 10px;
+    border-radius: 100px;
+    border: 2px solid #b2fefa;
+    /* background-color: #5d7ebc;   */
+    font-family: "New Amsterdam", sans-serif;
+    transition: background-color 0.3s ease;
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+}
+.button3{
+    border-radius: 2px;
+}
+.button button:hover{
+    cursor: pointer;
+    background-color: #3a93ff;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 50%;
+    /* border: 2px solid red; */
+    height: 100vh;
+    background: linear-gradient(to right, #b2fefa, #0ed2f7);
+    
+}
+.main-container{
+    display: flex;
+    justify-content: space-evenly;  
+}
+.h1{
+    text-align: center;
+    padding-top: 10px;
+}
+.notes-added{
+    text-align: center;
+    margin-top: 300px;
+}
+.text_color textarea {
+    width: 70%; 
+    height: 200px; 
+}
+.text_color{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    width: 100%;
+    margin-bottom: 40px;
+}
+@media only screen and (max-width: 768px) {
+    .text_color textarea {
+        width: 90%;
+        height: 150px; 
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .right-container, .left-container {
+        width: 100%; 
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .text_color textarea {
+        width: 80%; 
+        height: 120px; 
+    }
+
+    .button button {
+        width: 90%; 
+    }
+
+    .notes-added {
+        margin-top: 20px; 
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .text_color textarea {
+        width: 75%; 
+        height: 100px;
+    }
+
+    .button button {
+        width: 80%; 
+    }
+
+    .notes-added {
+        font-size: 0.8rem; 
+        margin-top: 10px; 
+    }
+
+    .right-container, .left-container {
+        width: 100%; 
+        padding: 10px; 
+    }
+}
